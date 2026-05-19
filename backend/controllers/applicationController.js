@@ -39,6 +39,7 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
         resume.tempFilePath,
         {
           folder: "Job_Seekers_Resume",
+          resource_type: "auto",
         }
       );
       if (!cloudinaryResponse || cloudinaryResponse.error) {
@@ -126,12 +127,10 @@ export const deleteApplication = catchAsyncErrors(async (req, res, next) => {
       application.deletedBy.employer = true;
       await application.save();
       break;
-
     default:
       console.log("Default case for application delete function.");
       break;
   }
-
   if (
     application.deletedBy.employer === true &&
     application.deletedBy.jobSeeker === true

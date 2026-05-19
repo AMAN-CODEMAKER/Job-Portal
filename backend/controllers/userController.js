@@ -51,7 +51,10 @@ export const register = catchAsyncErrors(async (req, res, next) => {
         try {
           const cloudinaryResponse = await cloudinary.uploader.upload(
             resume.tempFilePath,
-            { folder: "Job_Seekers_Resume" }
+            {
+              folder: "Job_Seekers_Resume",
+              resource_type: "auto",
+            }
           );
           if (!cloudinaryResponse || cloudinaryResponse.error) {
             return next(
@@ -148,6 +151,7 @@ export const updateProfile = catchAsyncErrors(async (req, res, next) => {
       }
       const newResume = await cloudinary.uploader.upload(resume.tempFilePath, {
         folder: "Job_Seekers_Resume",
+        resource_type: "auto",
       });
       newUserData.resume = {
         public_id: newResume.public_id,

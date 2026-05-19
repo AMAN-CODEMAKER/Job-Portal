@@ -7,8 +7,7 @@ import {
   fetchEmployerApplications,
   resetApplicationSlice,
 } from "../store/slices/applicationSlice";
-import Spinner from "./Spinner";
-import { Link } from "react-router-dom";
+ import Spinner from "./Spinner";
 
 const Applications = () => {
   const { applications, loading, error, message } = useSelector(
@@ -45,6 +44,7 @@ const Applications = () => {
             <h3>Applications For Your Posted Jobs</h3>
             <div className="applications_container">
               {applications.map((element) => {
+                console.log("Resume URL:", element.jobSeekerInfo.resume.url);
                 return (
                   <div className="card" key={element._id}>
                     <p className="sub-sec">
@@ -81,16 +81,14 @@ const Applications = () => {
                       >
                         Delete Application
                       </button>
-                      <Link
-                        to={
-                          element.jobSeekerInfo &&
-                          element.jobSeekerInfo.resume.url
-                        }
+                      
+                      <a  href={element.jobSeekerInfo.resume.url}
                         className="btn"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         View Resume
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 );
@@ -102,5 +100,4 @@ const Applications = () => {
     </>
   );
 };
-
 export default Applications;

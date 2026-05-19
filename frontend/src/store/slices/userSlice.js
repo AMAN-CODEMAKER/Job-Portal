@@ -72,9 +72,10 @@ const userSlice = createSlice({
       state.error = action.payload;
     },
     logoutSuccess(state, action) {
-      state.isAuthenticated = false;
-      state.user = {};
-      state.error = null;
+     state.loading = false; 
+     state.isAuthenticated = false;
+     state.user = {};
+     state.error = null;
     },
     logoutFailed(state, action) {
       state.isAuthenticated = state.isAuthenticated;

@@ -38,7 +38,7 @@ const Jobs = () => {
     dispatch(fetchJobs(city, niche, searchKeyword));
   };
 
-  const cities = [
+  /*const cities =[
     "All",
     "Karachi",
     "Lahore",
@@ -60,6 +60,29 @@ const Jobs = () => {
     "Mandi Bahauddin",
     "Larkana",
     "Nawabshah",
+  ];*/
+   const cities=[
+    "All",
+    "Delhii",
+    "Bangalore",
+    "Pune",
+    "Allahbad",
+    "Mathura",
+    "Chennai",
+    "Hyderabad",
+    "Nagpur",
+    "Gurugram",
+    "Gorakhpur",
+    "Mumbai",
+    "Noida",
+    "Chandigarh",
+    "Dispur",
+    "Pathankot",
+    "Goa",
+    "kasol",
+    "Mandi",
+    "Lucknow",
+    "Mandi",
   ];
 
   const nichesArray = [

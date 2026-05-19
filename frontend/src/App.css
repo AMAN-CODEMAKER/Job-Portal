@@ -17,8 +17,8 @@ input::-webkit-outer-spin-button {
 .btn,
 .black_btn,
 .outline_btn {
-  background: #dfdf07;
-  color: #111;
+  background: #129bf7;
+  color:white;
   font-weight: 500;
   border: none;
   transition: 0.3s;
@@ -40,7 +40,7 @@ input::-webkit-outer-spin-button {
   }
 }
 .btn:hover {
-  background-color: #111;
+  background-color:#129bf7;
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
@@ -57,17 +57,17 @@ input::-webkit-outer-spin-button {
 }
 .outline_btn {
   background: transparent;
-  color: #dfdf07;
-  border: 1px solid #dfdf07;
+  color: #129bf7;
+  border: 1px solid #129bf7;
 }
 .btn:hover {
-  background-color: #111;
+  background-color:#129bf7;
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
 }
 .outline_btn:hover {
-  background: #dfdf07;
+  background:#129bf7;
   color: #111;
   transition: 0.3s;
   cursor: pointer;
@@ -93,7 +93,7 @@ input::-webkit-outer-spin-button {
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #dfdf07;
+  color:#129bf7;
 }
 .navbar .logo img {
   width: 120px;
@@ -116,7 +116,7 @@ input::-webkit-outer-spin-button {
   transition: 0.3s;
 }
 .navbar .links ul li a:hover {
-  color: #dfdf07;
+  color:#129bf7;
   transition: 0.3s;
 }
 .navbar .links ul:last-child {
@@ -290,7 +290,7 @@ footer div ul a {
   transition: 0.3s;
 }
 footer div ul a:hover {
-  color: #dfdf07;
+  color: #129bf7;
   transition: 0.3s;
 }
 footer div ul a span {
@@ -359,8 +359,9 @@ footer div ul a span {
 .hero .box {
   max-width: 900px;
   text-align: center;
-  background: #dfdf07;
-  color: #111;
+  background: linear-gradient(135deg,  #4892c3,  #129bf7);
+  color: white;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
   padding: 50px 75px;
   border-radius: 35px;
   letter-spacing: 1px;
@@ -403,7 +404,7 @@ footer div ul a span {
 .services h3 {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #dfdf07;
+  color: #129bf7;
   text-transform: uppercase;
 }
 .services .grid {
@@ -422,7 +423,7 @@ footer div ul a span {
   transition: 0.3s;
 }
 .services .grid .card:hover {
-  background: #dfdf07;
+  background: #129bf7;
   color: #111;
   transition: 0.3s;
 }
@@ -445,7 +446,7 @@ footer div ul a span {
   align-items: center;
   margin: 0 auto;
   gap: 50px;
-  background: #dfdf07;
+  background:#129bf7;
 }
 .howItWorks h3 {
   font-size: 1.75rem;
@@ -586,7 +587,7 @@ footer div ul a span {
 .authPage .container form .inputTag div svg {
   width: 10%;
   font-size: 1.5rem;
-  background: #dfdf07;
+  background: #129bf7;
   height: 46px;
   padding: 8px;
   color: #fff;
@@ -598,17 +599,17 @@ footer div ul a span {
   margin-top: 25px;
   font-weight: 700;
   color: #fff;
-  background: #dfdf07;
+  background: #129bf7;
   font-size: 1.2rem;
   border-radius: 7px;
 }
 .authPage .container form a {
   padding: 12px;
   text-align: center;
-  border: 1px solid #dfdf07;
+  border: 1px solid  #129bf7;
   margin-top: 25px;
   font-weight: 700;
-  color: #dfdf07;
+  color:  #129bf7;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 7px;
@@ -714,7 +715,7 @@ footer div ul a span {
   position: absolute;
   right: 16px;
   top: 11px;
-  background: #dfdf07;
+  background: #129bf7;
   color: #111;
   font-weight: 500;
   padding: 2px 10px;
@@ -772,10 +773,10 @@ footer div ul a span {
 }
 .jobs .container .jobs_container .card .hiring-multiple {
   font-size: 16px;
-  color: #008b00;
+  color:  #129bf7;
   background: #008b0033;
   padding: 3px 4px;
-  border-radius: 5px;
+  border-radius: 5px; 
   width: fit-content;
 }
 .jobs .container .jobs_container .card .hiring {
@@ -877,7 +878,7 @@ footer div ul a span {
   color: #111;
 }
 .account .component_header p:last-child span {
-  color: #dfdf07;
+  color:  #129bf7;
 }
 
 .account .container {
@@ -909,11 +910,11 @@ footer div ul a span {
   background: transparent;
 }
 .account .container .sidebar .sidebar_links button:hover {
-  color: #dfdf07;
+  color:  #129bf7;
   transition: 0.3s;
 }
 .account .container .sidebar .sidebar_links .active {
-  color: #dfdf07;
+  color:  #129bf7;
 }
 .account .container .banner {
   width: 100%;
@@ -939,7 +940,7 @@ footer div ul a span {
 .account_components h3 {
   font-size: 30px;
   font-weight: 600;
-  color: #dfdf07;
+  color: #129bf7;
 }
 .account_components div:first-child {
   font-size: 30px;
@@ -1184,7 +1185,7 @@ footer div ul a span {
   margin-right: 50px;
 }
 .chatting .container .messages .sender span {
-  background: #33c75557;
+  background:  #129bf7;
   padding: 7px;
   width: fit-content;
 }
@@ -1209,7 +1210,7 @@ footer div ul a span {
   top: 8px;
   right: 14px;
   font-size: 25px;
-  color: #008b00;
+  color: #129bf7;
   background: transparent;
   border: none;
   overflow: hidden;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import {
   clearAllApplicationErrors,
@@ -83,16 +83,13 @@ const MyApplications = () => {
                       >
                         Delete Application
                       </button>
-                      <Link
-                        to={
-                          element.jobSeekerInfo &&
-                          element.jobSeekerInfo.resume.url
-                        }
+                      <a href={element.jobSeekerInfo.resume.url}
                         className="btn"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         View Resume
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 );

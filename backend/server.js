@@ -1,3 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config({ path: "./config/config.env" });
+console.log("JWT secret loaded:", process.env.JWT_SECRET_KEY);
+console.log("Cloudinary loaded:", process.env.CLOUDINARY_CLOUD_NAME);
+
 import app from "./app.js";
 import cloudinary from "cloudinary";
 

@@ -9,11 +9,9 @@ import userRouter from "./routes/userRouter.js";
 import jobRouter from "./routes/jobRouter.js";
 import applicationRouter from "./routes/applicationRouter.js";
 import { newsLetterCron } from "./automation/newsLetterCron.js";
-
-
 const app = express();
 config({ path: "./config/config.env" });
-
+config();
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL],
