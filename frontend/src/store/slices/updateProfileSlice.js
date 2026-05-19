@@ -47,7 +47,7 @@ export const updateProfile = (data) => async (dispatch) => {
   dispatch(updateProfileSlice.actions.updateProfileRequest());
   try {
     const response = await axios.put(
-      `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/update/profile",
+      `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/update/profile`,
       data,
       {
         withCredentials: true,
@@ -65,24 +65,25 @@ export const updateProfile = (data) => async (dispatch) => {
 };
 export const updatePassword = (data) => async (dispatch) => {
   dispatch(updateProfileSlice.actions.updatePasswordRequest());
-  try {
+ try {
     const response = await axios.put(
-      `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/update/password",
+      `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/update/password`,
       data,
       {
         withCredentials: true,
         headers: { "Content-Type": "application/json" },
       }
     );
+
     dispatch(updateProfileSlice.actions.updatePasswordSuccess());
   } catch (error) {
     dispatch(
       updateProfileSlice.actions.updatePasswordFailed(
-        error.response.data.message || "Failed to update password."
+        error.response?.data?.message || "Failed to update password."
       )
     );
   }
-};
+}
 
 export const clearAllUpdateProfileErrors = () => (dispatch) => {
   dispatch(updateProfileSlice.actions.profileResetAfterUpdate());
